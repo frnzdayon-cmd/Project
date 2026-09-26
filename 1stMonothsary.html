@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary my babyyy saiahhh!!!❤️</title>
+    <link rel="stylesheet" href="monthsary.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop preload="auto">
+    <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts">
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+</div>
+
+<div class="stars">
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+</div>
+
+<main class="container">
+
+    <section class="hero">
+        <p class="small-text">TO THE LOVE OF MY LIFE</p>
+
+        <h1>Happy Monthsary</h1>
+
+        <div class="heart">♥</div>
+
+        <h2>My babiiii!!!</h2>
+
+        <p class="intro">
+            Another beautiful month with you,
+            another month filled with memories,
+            laughter, love, and happiness.
+        </p>
+
+        <button onclick="showMessage()">Open My Message ❤️</button>
+    </section>
+
+    <section class="photo-section">
+        <div class="photo-frame">
+            <img src="us.jpg" alt="Our Photo">
+        </div>
+
+        <div class="photo-text">
+            <p>Every moment with you</p>
+            <h2>is my favorite memory.</h2>
+        </div>
+    </section>
+
+    <section class="message" id="message">
+        <div class="message-card">
+
+            <p class="message-title">A Little Message For You</p>
+
+            <h2>To My Beautiful Girl ❤️</h2>
+
+            <p>
+                Happy monthsary, my love.
+            </p>
+
+            <p>
+                I just want you to know how grateful I am
+                to have you in my life. Every day with you babi
+                is something I treasure jd always, whether we're
+                happy or kabuang hehe, talking about random
+                things nga kita ray maka sabot HAHHAAHH.
+            </p>
+
+            <p>
+                You make ordinary days feel special.
+                You make me smile when I need it the most,
+                and you give me so many reasons to be happy.
+            </p>
+
+            <p>
+                Dili man ko maka tell nimo in perfect words nga maka
+                tell nimo how much you mean to me,
+                but I hope you always remember that
+                I love and appreciate you more than you know.
+            </p>
+
+            <p>
+                Here's to monthsary BABIII!!!
+                more memories, more laughter,
+                more adventures, and more love.
+            </p>
+
+            <p class="forever">
+                I'd choose you in a hundred lifetimes babi:),
+                in different worlds, in any version of you,
+                I'd still choose you hub:> ❤️
+            </p>
+
+            <div class="signature">
+                Forever yours,<br>
+                <span>BABI:)</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="love-section">
+        <p>ONE MONTH, ANOTHER MEMORY</p>
+        <h2>My Cutiepieee</h2>
+        <div class="big-heart">♥</div>
+    </section>
+
+</main>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+function startMusic() {
+    music.volume = 0.5;
+
+    const playPromise = music.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {});
+    }
+}
+
+document.addEventListener("touchstart", startMusic, { once: true });
+document.addEventListener("click", startMusic, { once: true });
+
+function showMessage() {
+    startMusic();
+
+    const message = document.getElementById("message");
+
+    message.classList.add("show");
+
+    message.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+</script>
+
+</body>
+</html>
